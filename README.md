@@ -2,7 +2,7 @@
 
 Use Whisper to transcribe audio from your microphone and copy the transcript to your clipboard.
 
-⚙️ Requirements
+## Requirements
 
 ```bash
 brew install whisper-cli ffmpeg
@@ -16,14 +16,16 @@ cd ~/Warkanlock/models
 curl -O https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
 ```
 
-📜 Script Setup
-	1.	Save the script as translate (or any name) in your path:
+## Script Setup
+
+1.	Save the script as translate (or any name) in your path:
 
 ```bash
 sudo mv translate /usr/local/bin/translate
 chmod +x /usr/local/bin/translate
 ```
-	2.	Set your mic input index:
+
+2.	Set your mic input index:
 
 ```bash
 ffmpeg -f avfoundation -list_devices true -i ""
@@ -31,7 +33,7 @@ ffmpeg -f avfoundation -list_devices true -i ""
 
 Update `INPUT_DEVICE=":1"` in the script as needed.
 
-▶️ Usage
+## Usage
 
 Run in terminal:
 
